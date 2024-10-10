@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Email</title>
+    <link rel="stylesheet" href="resetPassword.css" />
+    <link rel="stylesheet" href="checkEmail.css" />
+  </head>
+  <body>
+    <!--********** Main container ************ -->
+    <main>
+      <div class="checkPassword__section">
+        <div>
+          <img src="/images/checkEmail.jpeg" alt="girl" />
+        </div>
+
+        <div class="checkPassword__container">
+          <!-- For Reset password -->
+          <h2>Check Email</h2>
+          <p>
+            Please check your email inbox and click on the provided link to
+            reset your password . If you don’t receive email,
+            <button
+              class="checkEmail__btn submit resend__button"
+              role="button"
+              type="submit"
+            >
+              Click here to resend
+            </button>
+          </p>
+
+          <div>
+            <div class="checkPassword__login">
+              <span>Back to <a href="#">Login</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("bfRf5kSgu2EmtWlbq"); // Initialize with your user ID from EmailJS
+      })();
+    </script>
+    <script src="checkEmail.js"></script>
+
+    <!---------- For Verification Section  ------------>
+    <!-- <main>
+      <div class="Verify__overlay">
+        <div class="verify__section" style="background-color: green">
+          <div class="verify__container">
+            <h2>Verification</h2>
+            <p>Verify your code.</p>
+
+            <form id="verifyPassword__form" method="post">
+              <div class="label">
+                <label for="email">Verification Code</label>
+                <div>
+                  <input type="email" name="email" class="email" id="email" />
+                </div>
+              </div>
+              <div class="verifyEmail__errMess errHidden"></div>
+
+              <div class="verifyPassword__btn">
+                <button role="button" type="submit" class="submit">
+                  Verify Code
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main> -->
+  </body>
+</html>

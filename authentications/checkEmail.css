@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+.checkPassword__section,
+.verify__section {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  min-height: 100%;
+}
+
+.checkPassword__section img,
+.verify__section img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: top;
+  aspect-ratio: 16 / 15.2;
+}
+
+.checkPassword__container,
+.verify__container {
+  padding: 40px 80px 0px 20px;
+}
+.checkPassword__container h2,
+.verify__container h2 {
+  font-size: 18px;
+  margin-bottom: 0.3rem;
+}
+.checkPassword__container p,
+.verify__container p {
+  font-size: 10px;
+  color: rgb(114, 114, 114);
+}
+
+.checkPassword__btn,
+.verifyPassword__btn {
+  margin-top: 2.3rem;
+}
+.checkPassword__btn button,
+.verifyPassword__btn button {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 11px;
+
+  background-color: #8a33fd;
+  color: #f0f0f0;
+}
+
+.checkPassword__login {
+  margin-top: 0.2rem;
+}
+.checkPassword__login span,
+.checkPassword__login span a {
+  font-size: 11px;
+  color: rgb(114, 114, 114);
+}
+
+.checkEmail__btn {
+  border: none;
+  background-color: transparent;
+  font-size: 10px;
+  color: #8a33fd;
+  font-weight: 600;
+}
+
+/************ For Verify OTP  ************/
+.verify__section form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  caret-color: #8a33fd;
+  /* color: rgb(114, 114, 114); */
+  border-radius: 0.3rem;
+  margin-top: 0.3rem;
+  background-color: #f0f0f0;
+  border: 1px solid #8a33fd;
+}
+
+.verifyPassword__section form input::placeholder {
+  color: #8a33fd;
+}
+.label {
+  font-size: 11px;
+  color: rgb(83, 82, 82);
+  margin-top: 2rem;
+}
+
+.Verify__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*********** Media Query *************/
+@media screen and (max-width: 1200px) {
+  .checkPassword__section img,
+  .verify__section img {
+    aspect-ratio: 16 / 18;
+  }
+}
+@media screen and (max-width: 900px) {
+  .checkPassword__section img,
+  .verify__section img {
+    aspect-ratio: 16 / 20;
+  }
+}
+@media screen and (max-width: 834px) {
+  .checkPassword__section img,
+  .verify__section img {
+    aspect-ratio: 16 / 24;
+  }
+}
+@media screen and (max-width: 769px) {
+  .checkPassword__section img,
+  .verify__section img {
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16 / 9;
+  }
+
+  .checkPassword__container,
+  .verify__container {
+    padding: 0px 30px 40px;
+  }
+
+  .checkPassword__logIn__btn {
+    margin-top: 2rem;
+  }
+  .checkPassword__btn button,
+  .verifyPassword__btn button {
+    padding: 10px 25px;
+  }
+}
