@@ -10,16 +10,14 @@
   cursor: pointer;
 }
 
-.checkPassword__section,
-.verify__section {
+.checkPassword__section {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   min-height: 100%;
 }
 
-.checkPassword__section img,
-.verify__section img {
+.checkPassword__section img {
   width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -27,8 +25,7 @@
   aspect-ratio: 16 / 15.2;
 }
 
-.checkPassword__container,
-.verify__container {
+.checkPassword__container {
   padding: 40px 80px 0px 20px;
 }
 .checkPassword__container h2,
@@ -75,6 +72,12 @@
 }
 
 /************ For Verify OTP  ************/
+.verify__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .verify__section form input {
   width: 100%;
   border: none;
@@ -89,7 +92,14 @@
   background-color: #f0f0f0;
   border: 1px solid #8a33fd;
 }
+.verify__container {
+  background-color: ghostwhite;
+  width: 30%;
+  height: 40%;
 
+  border-radius: 0.5rem;
+  padding: 30px 40px 10px 40px;
+}
 .verifyPassword__section form input::placeholder {
   color: #8a33fd;
 }
@@ -107,38 +117,49 @@
   bottom: 0;
   width: 100%;
 
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.verifyPassword__btn {
+  margin-top: 1rem;
 }
 
 /*********** Media Query *************/
 @media screen and (max-width: 1200px) {
-  .checkPassword__section img,
-  .verify__section img {
+  .checkPassword__section img {
     aspect-ratio: 16 / 18;
   }
 }
+@media screen and (max-width: 1150px) {
+  .verify__container {
+    width: 40%;
+    height: 35%;
+    padding: 30px 40px 0px 40px;
+  }
+}
 @media screen and (max-width: 900px) {
-  .checkPassword__section img,
-  .verify__section img {
+  .checkPassword__section img {
     aspect-ratio: 16 / 20;
+  }
+  .verify__container {
+    width: 60%;
+    height: 35%;
+    padding: 40px 40px 0px 40px;
   }
 }
 @media screen and (max-width: 834px) {
-  .checkPassword__section img,
-  .verify__section img {
+  .checkPassword__section img {
     aspect-ratio: 16 / 24;
   }
 }
 @media screen and (max-width: 769px) {
-  .checkPassword__section img,
-  .verify__section img {
+  .checkPassword__section img {
     object-fit: cover;
     object-position: center;
     aspect-ratio: 16 / 9;
   }
 
-  .checkPassword__container,
-  .verify__container {
+  .checkPassword__container {
     padding: 0px 30px 40px;
   }
 
@@ -148,5 +169,21 @@
   .checkPassword__btn button,
   .verifyPassword__btn button {
     padding: 10px 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .verify__container {
+    width: 75%;
+    height: 40%;
+    padding: 40px 40px 0px 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .verify__container {
+    width: 80%;
+    height: 35%;
+    padding: 40px 40px 0px 40px;
   }
 }

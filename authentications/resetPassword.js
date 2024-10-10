@@ -61,7 +61,10 @@ function sendEmailWithOTP(userEmail, otp) {
     function (response) {
       console.log("SUCCESS!", response.status, response.text);
       successMess.textContent = " OTP has been sent to your email!";
-      location.href = "/authentications/checkEmail.html";
+
+      setTimeout(function () {
+        location.href = "/authentications/checkEmail.html";
+      }, 3000);
     },
     function (error) {
       console.log("FAILED...", error);
