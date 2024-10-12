@@ -86,7 +86,6 @@
   font-size: 12px;
   font-weight: 600;
   caret-color: #8a33fd;
-  /* color: rgb(114, 114, 114); */
   border-radius: 0.3rem;
   margin-top: 0.3rem;
   background-color: #f0f0f0;
@@ -94,11 +93,11 @@
 }
 .verify__container {
   background-color: ghostwhite;
-  width: 30%;
+  width: 40%;
   height: 40%;
 
   border-radius: 0.5rem;
-  padding: 30px 40px 10px 40px;
+  padding: 20px 40px 10px 40px;
 }
 .verifyPassword__section form input::placeholder {
   color: #8a33fd;
@@ -123,6 +122,19 @@
 .verifyPassword__btn {
   margin-top: 1rem;
 }
+.errVerification {
+  font-size: 0.9rem;
+  padding: 10px 0px 0px;
+  text-align: center;
+  color: red;
+}
+
+.successVerifcation {
+  font-size: 0.9rem;
+  padding: 10px 0px 0px;
+  text-align: center;
+  color: green;
+}
 
 /*********** Media Query *************/
 @media screen and (max-width: 1200px) {
@@ -134,7 +146,7 @@
   .verify__container {
     width: 40%;
     height: 35%;
-    padding: 30px 40px 0px 40px;
+    padding: 20px 40px 0px 40px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -143,8 +155,8 @@
   }
   .verify__container {
     width: 60%;
-    height: 35%;
-    padding: 40px 40px 0px 40px;
+    height: 43%;
+    padding: 20px 40px 0px 40px;
   }
 }
 @media screen and (max-width: 834px) {
@@ -160,7 +172,7 @@
   }
 
   .checkPassword__container {
-    padding: 0px 30px 40px;
+    padding: 20px 30px 40px;
   }
 
   .checkPassword__logIn__btn {
@@ -176,7 +188,7 @@
   .verify__container {
     width: 75%;
     height: 40%;
-    padding: 40px 40px 0px 40px;
+    padding: 20px 40px 0px 40px;
   }
 }
 
@@ -184,6 +196,6 @@
   .verify__container {
     width: 80%;
     height: 35%;
-    padding: 40px 40px 0px 40px;
+    padding: 25px 40px 0px 40px;
   }
 }

@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Check Email</title>
-    <link rel="stylesheet" href="resetPassword.css" />
+    <!-- <link rel="stylesheet" href="resetPassword.css" /> -->
     <link rel="stylesheet" href="checkEmail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!--********** Main container ************ -->
@@ -39,6 +43,38 @@
       </div>
     </main>
 
+    <!---------- For Verification Section  ------------>
+    <!-- animate__zoomIn animate__animated animate__delay-1s -->
+    <main>
+      <div class="Verify__overlay">
+        <div class="verify__section">
+          <div
+            class="verify__container animate__backInDown animate__animated animate__delay-1s"
+          >
+            <div class="verificationMess"></div>
+            <h2>Verification</h2>
+            <p>Verify your code.</p>
+
+            <form id="verifyPassword__form">
+              <div class="label">
+                <label for="email">Verification Code</label>
+                <div>
+                  <input type="text" name="codeVerify" id="codeVerify" />
+                </div>
+              </div>
+              <div class="verifyEmail__errMess errHidden"></div>
+
+              <div class="verifyPassword__btn">
+                <button role="button" type="submit" class="codeSubmit">
+                  Verify Code
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -49,33 +85,5 @@
       })();
     </script>
     <script src="checkEmail.js"></script>
-
-    <!---------- For Verification Section  ------------>
-    <main>
-      <div class="Verify__overlay">
-        <div class="verify__section">
-          <div class="verify__container">
-            <h2>Verification</h2>
-            <p>Verify your code.</p>
-
-            <form id="verifyPassword__form" method="post">
-              <div class="label">
-                <label for="email">Verification Code</label>
-                <div>
-                  <input type="email" name="email" class="email" id="email" />
-                </div>
-              </div>
-              <div class="verifyEmail__errMess errHidden"></div>
-
-              <div class="verifyPassword__btn">
-                <button role="button" type="submit" class="submit">
-                  Verify Code
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </main>
   </body>
 </html>
