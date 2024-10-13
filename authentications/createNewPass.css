@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+[role="button"] {
+  cursor: pointer;
+}
+
+/************** Main Content ***************/
+.signUp__section {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  min-height: 100%;
+}
+
+.signUp__section img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: top;
+  aspect-ratio: 16 / 13.29;
+}
+
+.signUp__container {
+  padding: 20px 80px 0px 20px;
+}
+.signUp__container h2 {
+  font-size: 20px;
+  margin-bottom: 0.3rem;
+}
+.signUp__container p {
+  font-size: 12px;
+}
+
+.errorMess__email,
+.errorMess__password {
+  font-size: 12px;
+  color: red;
+  display: none;
+}
+
+.signUp__section form {
+  margin-top: 1rem;
+}
+
+.signUp__section form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 12px;
+  caret-color: #8a33fd;
+  color: rgb(114, 114, 114);
+  border-radius: 0.3rem;
+  margin-top: 0.3rem;
+  background-color: #f0f0f0;
+  border: 1px solid gainsboro;
+}
+.signUp__section form label {
+  font-size: 12px;
+  color: rgb(114, 114, 114);
+}
+
+.signUp__password {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 1rem;
+}
+
+.password__container {
+  position: relative;
+}
+.password__icons {
+  position: absolute;
+  top: 60%;
+  right: 10px;
+  transform: translateY(-50%);
+
+  display: none;
+}
+
+.signUp__checkBox span:last-child {
+  font-size: 12px;
+  color: rgb(114, 114, 114);
+}
+.signUp__checkBox a {
+  color: rgb(114, 114, 114);
+}
+
+.checkBox__container,
+.subscribeTerm__container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-top: 1rem;
+}
+
+.error__terms,
+.error__subscribe {
+  font-size: 12px;
+  color: red;
+  display: none;
+}
+
+.signUp__btn {
+  margin-top: 2rem;
+}
+.signUp__btn button {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 12px;
+
+  background-color: #8a33fd;
+  color: #f0f0f0;
+}
+
+.resetPassword__btn button:hover {
+  background-color: #9e60ef;
+}
+
+.signUp__login {
+  margin-top: 0.2rem;
+}
+.signUp__login span,
+.signUp__login span a {
+  font-size: 12px;
+  color: rgb(114, 114, 114);
+}
+
+.emailExisted {
+  font-size: 12px;
+  color: red;
+}
+
+/*********** Media Query *************/
+@media screen and (max-width: 1200px) {
+  .signUp__section img {
+    aspect-ratio: 16 / 18;
+  }
+}
+@media screen and (max-width: 900px) {
+  .signUp__section img {
+    aspect-ratio: 16 / 20;
+  }
+}
+@media screen and (max-width: 834px) {
+  .signUp__section img {
+    aspect-ratio: 16 / 24;
+  }
+}
+@media screen and (max-width: 769px) {
+  .signUp__section img {
+    object-fit: cover;
+    object-position: top;
+    aspect-ratio: 16 / 13.5;
+  }
+
+  .signUp__container {
+    padding: 0px 30px 40px;
+  }
+  .signUp__section form input {
+    padding: 12px;
+  }
+
+  .signUp__btn {
+    margin-top: 2rem;
+  }
+  .signUp__btn button {
+    padding: 10px 25px;
+  }
+}

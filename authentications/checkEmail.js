@@ -51,6 +51,13 @@ inputOTP.oninput = function () {
 formOTP.addEventListener("submit", function (e) {
   e.preventDefault();
 
+  if (!inputOTP.value)
+    return (
+      (verifyMess.textContent = "Please enter your OTP") &&
+      verifyMess.classList.add("errVerification")
+    );
+  location.href = "/authentications/createNewPass.html";
+
   verifyMess.classList.add("successVerifcation");
   verifyMess.textContent = "Success! Your OTP has been verified.";
   inputOTP.value = "";
