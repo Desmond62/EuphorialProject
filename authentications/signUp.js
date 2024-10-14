@@ -106,7 +106,8 @@ function handleValidation() {
   ////// Checking If the Email is alredy Exist ///////
   const existEmail = formUser.some((user) => user.email === email);
   if (existEmail) {
-    return (emailExisted.textContent = "Email is already existed");
+    return (emailExisted.textContent =
+      "This email already exists. Please choose a different one.");
   } else {
     emailExisted.textContent = "";
   }

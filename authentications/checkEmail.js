@@ -57,7 +57,6 @@ formOTP.addEventListener("submit", function (e) {
       verifyMess.classList.add("errVerification")
     );
   location.href = "/authentications/createNewPass.html";
-
   verifyMess.classList.add("successVerifcation");
   verifyMess.textContent = "Success! Your OTP has been verified.";
   inputOTP.value = "";
