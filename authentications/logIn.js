@@ -1,46 +1,4 @@
 "use strict";
-const svg =
-  '<svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24"><path fill="currentColor" d="m7 10l5 5l5-5z"/></svg>';
-
-const countries = [
-  { name: "Portuguise" },
-  { name: "English (United State)" },
-  { name: "Chinese" },
-  { name: "French" },
-  { name: "Italian" },
-];
-
-const dropDown = document.querySelector(".logIn__custom__dropdown");
-const headerLogin = dropDown.querySelector(".logIn__drop__header");
-const loginList = dropDown.querySelector(".logInDropdown__list");
-const item = dropDown.querySelector(".logInDropdown__item");
-const items = countries;
-
-///////// Implementing the Dropdown ///////////
-headerLogin.onclick = () => {
-  loginList.style.display =
-    loginList.style.display === "block" ? "none" : "block";
-};
-
-///////// To Add Each Of The Option ///////////
-items.forEach((name) => {
-  item.style.display = "none";
-  const html = `
-      <div class="logInDropdown__item"><span>${name.name}</span> ${svg}</div>
-      `;
-  loginList.insertAdjacentHTML("afterbegin", html);
-  loginList.onclick = (e) => {
-    headerLogin.innerHTML = `${e.target.textContent}${svg} `;
-    loginList.style.display = "none";
-  };
-});
-
-/////// TO remove the Dropdown each time it click outside //////
-document.addEventListener("click", function (e) {
-  if (!dropDown.contains(e.target)) {
-    loginList.style.display = "none";
-  }
-});
 
 ////////////////// For Validation //////////////
 

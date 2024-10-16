@@ -37,9 +37,19 @@
 }
 
 .errorMess__password {
-  font-size: 11px;
+  font-size: 12px;
   color: red;
+  margin: 0.5rem 0rem;
+  text-align: center;
+  font-weight: 600;
+  /* display: none; */
+}
+.successChangePass {
+  font-size: 12px;
+  color: green;
   margin-top: 0.4rem;
+  text-align: center;
+  font-weight: 600;
 }
 
 .newPass__section form {
@@ -65,16 +75,14 @@
 }
 
 .newPass__password {
-  display: flex;
-  justify-content: space-between;
   font-size: 12px;
   margin-top: 1rem;
 }
 
-.password__container {
+.newPass__containerIcon {
   position: relative;
 }
-.password__icons {
+.newPass__icons {
   position: absolute;
   top: 60%;
   right: 10px;

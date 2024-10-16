@@ -30,7 +30,7 @@
         <!-- prettier-ignore -->
         <div class="logIn__dropDown__section">
           <div class="logIn__custom__dropdown">
-          <div class="logIn__drop__header"><span class="logIn__select__lang">Select Language </span><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="currentColor" d="m7 10l5 5l5-5z"/></svg></div>
+          <div class="logIn__drop__header"><span class="logIn__select__lang">Select Lang </span><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="currentColor" d="m7 10l5 5l5-5z"/></svg></div>
           <div class="logInDropdown__list animate__animated animate__fadeInDown animate__delay-0.1s my-element">
               <div class="logInDropdown__item"><span>English (United State)</span> <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24"><path fill="currentColor" d="m7 10l5 5l5-5z"/></svg></div>
             </div>
@@ -38,7 +38,7 @@
 
           <div class="logIn__navBar__loginBtn">
             <button role="button">Login</button>
-            <button role="button">Sign Up</button>
+            <button role="button"><a style="color:#8a33fd ;text-decoration: none;" href="/authentications/signUp.html">Sign Up</a></button>
           </div>
         </div>
       </nav>
@@ -89,6 +89,7 @@
                   <label for="password">Password</label>
                 </div>
               </div>
+
               <div class="password__container">
                 <input
                   type="password"
@@ -114,7 +115,9 @@
 
             <!-- For forget password -->
             <div class="forget__password">
-              <a href="#">Forget your password</a>
+              <a href="/authentications/resetPassword.html"
+                >Forget your password</a
+              >
             </div>
 
             <div>
@@ -125,7 +128,10 @@
               </div>
 
               <div class="logIn__login">
-                <span>Don't have an account? <a href="#">Sign Up</a></span>
+                <span
+                  >Don't have an account?
+                  <a href="/authentications/signUp.html">Sign Up</a></span
+                >
               </div>
             </div>
           </form>
