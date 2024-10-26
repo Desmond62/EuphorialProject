@@ -1,6 +1,6 @@
 "use strict";
 
-// Initialize Swiper
+// Initialize Swiper FOR CAROUSEL
 const swiper = new Swiper(".swiper-container", {
   direction: "horizontal",
   loop: true,
@@ -18,25 +18,18 @@ const swiper = new Swiper(".swiper-container", {
   },
 });
 
-// // Initialize Swiper
-// const swiper = new Swiper(".swiper-container", {
-//   effect: "fade", // Use fade effect instead of sliding
-//   loop: true, // Enable looping
-//   autoplay: {
-//     delay: 3000, // Change slide every 3 seconds
-//     disableOnInteraction: false, // Continue autoplay after user interaction
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true, // Enable clickable pagination bullets
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
+// New gallery carousel initialization
+const gallerySlider = new Swiper(".gallery-container", {
+  wrapperClass: "gallery-wrapper",
+  slideClass: "gallery-slide",
+  slidesPerView: "auto",
+  spaceBetween: 12,
+  navigation: {
+    nextEl: ".gallery-next",
+    prevEl: ".gallery-prev",
+  },
+  speed: 400,
+});
 
-//   // Optional: Fade effect settings
-//   fadeEffect: {
-//     crossFade: true, // Enable cross-fade for smoother transitions
-//   },
-// });
+const expiredTIme = Date.now() + 60000;
+console.log(expiredTIme);

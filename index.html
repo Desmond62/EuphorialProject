@@ -8,10 +8,16 @@
     <!-- For Carousel Slides -->
     <!--  prettier-ignore  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- For Navbar -->
     <header>
+      <!-- prettier-ignore -->
+      <div>
+         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"/></svg>
+       </div>
       <nav class="home__navbar">
         <div>
           <h3>Euphorial</h3>
@@ -31,8 +37,8 @@
         <div>
           <!-- prettier-ignore -->
           <form action="" method="post">
-          <label for="homeSearch">
-          <button style="border: none;background-color: transparent; display: flex;align-items: center;" role="button" ><svg role="button" xmlns="http://www.w3.org/2000/svg"  width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none" stroke="black"><circle cx="11" cy="11" r="5.5"/><path stroke-linecap="round" stroke-linejoin="round" d="m15 15l4 4"/></g></svg></button> 
+          <label for="homeSearch" style="display: flex;align-items: center;">
+          <svg role="button" xmlns="http://www.w3.org/2000/svg"  width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none" stroke="black"><circle cx="11" cy="11" r="5.5"/><path stroke-linecap="round" stroke-linejoin="round" d="m15 15l4 4"/></g></svg>
           </label>
           <input type="search" placeholder="search" class="home__navBar" id="homeSearch" />
         </form>
@@ -59,52 +65,124 @@
     <!--------- For Main Section ---------->
     <main>
       <!-- FOR CAROUSEL SECTIOM  -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper__titles">
-              <span>T-shirt / Tops</span>
-              <div>
-                <h1>Summer</h1>
-                <h1>Value Pack</h1>
-              </div>
-              <p>cool / colorful / comfy</p>
+      <section>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper__titles">
+                <span>T-shirt / Tops</span>
+                <div>
+                  <h1>Summer</h1>
+                  <h1>Value Pack</h1>
+                </div>
+                <p>cool / colorful / comfy</p>
 
-              <div class="shop__btn">
-                <button role="button">Shop Now</button>
+                <div class="shop__btn">
+                  <button role="button">Shop Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper__titles">
+                <span>T-shirt / Tops</span>
+                <div>
+                  <h1>Summer</h1>
+                  <h1>Value Pack</h1>
+                </div>
+                <p>cool / colorful / comfy</p>
+
+                <div class="shop__btn">
+                  <button role="button">Shop Now</button>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="swiper-slide">
-            <div class="swiper__titles">
-              <span>T-shirt / Tops</span>
-              <div>
-                <h1>Summer</h1>
-                <h1>Value Pack</h1>
-              </div>
-              <p>cool / colorful / comfy</p>
+          <!-- Optional: Add navigation buttons -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
 
-              <div class="shop__btn">
-                <button role="button">Shop Now</button>
-              </div>
+          <!-- Optional: Add pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- SECTION TWO -->
+      <section>
+        <div class="section__two">
+          <div class="low__price">
+            <div>
+              <span>Low Price</span>
+              <h2>High Coziness</h2>
+              <p>UPTO 50% OFF</p>
+              <h6>Explore Items</h6>
+            </div>
+          </div>
+
+          <div class="beyoung__present">
+            <div>
+              <span>Beyoung Presents</span>
+              <h2>Breeze Summer Style</h2>
+              <p>UPTO 50% OFF</p>
+              <h6>Explore Items</h6>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Optional: Add navigation buttons -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-        <!-- Optional: Add pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div></div>
+      <!--  NEW ARRIVAL SECTION  -->
+      <section>
+        <div class="new__arrivalSection">
+          <div></div>
+          <div class="gallery-container">
+            <div class="gallery-wrapper">
+              <div class="gallery-slide">
+                <img src="images/image17.jpeg" alt="Image 1" />
+              </div>
+              <div class="gallery-slide">
+                <img src="images/image17.jpeg" alt="Image 1" />
+              </div>
+              <div class="gallery-slide">
+                <img src="images/image17.jpeg" alt="Image 1" />
+              </div>
+              <div class="gallery-slide">
+                <img src="images/image17.jpeg" alt="Image 1" />
+              </div>
+              <div class="gallery-slide">
+                <img src="images/image17.jpeg" alt="Image 1" />
+              </div>
+              <div class="gallery-slide">
+                <img src="images/image17.jpeg" alt="Image 1" />
+              </div>
+              <div class="gallery-slide">
+                <img src="images/image17.jpeg" alt="Image 1" />
+              </div>
+              <div class="gallery-slide">
+                <img src="images/image17.jpeg" alt="Image 1" />
+              </div>
+              <div class="gallery-slide">
+                <img src="images/image17.jpeg" alt="Image 1" />
+              </div>
+              <div class="gallery-slide">
+                <img src="images/image17.jpeg" alt="Image 1" />
+              </div>
+              <div class="gallery-slide">
+                <img src="images/image17.jpeg" alt="Image 1" />
+              </div>
+              <!-- More slides... -->
+            </div>
+            <button class="gallery-prev" role="button">&LeftArrow;</button>
+            <button class="gallery-next" role="button">&RightArrow;</button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- js for Home Page -->
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="index.js" type="module"></script>
   </body>

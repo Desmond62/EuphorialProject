@@ -71,6 +71,17 @@
   font-weight: 600;
 }
 
+.errorSaved__email {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: red;
+}
+.successSaved__email {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: green;
+}
+
 /************ For Verify OTP  ************/
 .verify__section {
   display: flex;
@@ -123,15 +134,14 @@
   margin-top: 1rem;
 }
 .errVerification {
-  font-size: 0.9rem;
-  padding: 10px 0px 0px;
+  font-size: 0.7rem;
   text-align: center;
   color: red;
+  margin-bottom: 0.3rem;
 }
 
 .successVerifcation {
-  font-size: 0.9rem;
-  padding: 10px 0px 0px;
+  font-size: 0.7rem;
   text-align: center;
   color: green;
 }

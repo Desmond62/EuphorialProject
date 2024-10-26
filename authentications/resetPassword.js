@@ -15,20 +15,29 @@ form.addEventListener("submit", function (e) {
 
 /////// FOR VALIDATING OF THE EMAIL
 let currentUserEmail;
+
 function validationEmailAndSendOtp() {
   const email = resetEmail.value.trim();
-  const currentUserEmail = getEmail.find((user) => email === user.email);
+  currentUserEmail = getEmail.find((user) => email === user.email);
 
   if (!email) {
     errorResetMess.textContent = "Please your email is needed";
     errorResetMess.classList.remove("errHidden");
     return;
   }
-  if (currentUserEmail?.email) {
+  if (currentUserEmail) {
     const otp = generateOTP();
-    /// adding otp to our current user object
+
+    // Store the current user's email in localStorage
+    localStorage.setItem("currentUserEmail", currentUserEmail.email);
+
+    /// adding otp to and expiration time our current user object
     currentUserEmail.otp = otp;
+    currentUserEmail.otpExpiration = Date.now() + 60000;
+    currentUserEmail.otpUsed = false; //Track if the OTP has been used
+
     //   updating the users array in local storage
+
     localStorage.setItem("users", JSON.stringify(getEmail));
 
     errorResetMess.style.display = "none";
@@ -57,7 +66,7 @@ function sendEmailWithOTP(userEmail, otp) {
   };
 
   // Use emailjs.send function to send the email
-  emailjs.send("service_eazppag", "template_nhr9m4e", templateParams).then(
+  emailjs.send("service_peq5bqa", "template_34ejrut", templateParams).then(
     function (response) {
       console.log("SUCCESS!", response.status, response.text);
       successMess.textContent = " OTP has been sent to your email!";
