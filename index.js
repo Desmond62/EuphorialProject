@@ -1,5 +1,79 @@
 "use strict";
 
+const galleryWrapper = document.querySelector(".gallery-wrapper");
+
+const newArrival = [
+  {
+    id: "1",
+    img: "/images/image4.jpeg",
+    brand: "Knitted Joggers",
+  },
+  {
+    id: "2",
+    img: "/images/image5.jpeg",
+    brand: "Full Sleeve",
+  },
+  {
+    id: "3",
+    img: "/images/image6.jpeg",
+    brand: "Active T-Shirts",
+  },
+  {
+    id: "4",
+    img: "/images/image7.jpeg",
+    brand: "Urban Shirts",
+  },
+  {
+    id: "5",
+    img: "/images/image21.jpeg",
+    brand: "Knitted Joggers",
+  },
+  {
+    id: "6",
+    img: "/images/image9.jpeg",
+    brand: "Knitted Joggers",
+  },
+  {
+    id: "7",
+    img: "/images/image10.jpeg",
+    brand: "Knitted Joggers",
+  },
+  {
+    id: "8",
+    img: "/images/image19.jpeg",
+    brand: "Knitted Joggers",
+  },
+  {
+    id: "9",
+    img: "/images/image12.jpeg",
+    brand: "Knitted Joggers",
+  },
+  {
+    id: "10",
+    img: "/images/image13.jpeg",
+    brand: "Knitted Joggers",
+  },
+  {
+    id: "11",
+    img: "/images/image14.jpeg",
+    brand: "Knitted Joggers",
+  },
+];
+
+//
+
+galleryWrapper.innerHTML = "";
+
+newArrival.forEach((item) => {
+  const html = `
+               <div class="gallery-slide">
+                  <img class="skeleton__image" src=${item.img} alt=${item.brand} />
+                  <p class="skeleton__text">${item.brand}</p>
+                </div>
+    `;
+  galleryWrapper.insertAdjacentHTML("beforeend", html);
+});
+
 // Initialize Swiper FOR CAROUSEL
 const swiper = new Swiper(".swiper-container", {
   direction: "horizontal",
@@ -30,6 +104,3 @@ const gallerySlider = new Swiper(".gallery-container", {
   },
   speed: 400,
 });
-
-const expiredTIme = Date.now() + 60000;
-console.log(expiredTIme);

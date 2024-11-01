@@ -55,6 +55,13 @@ function validationEmailAndSendOtp() {
 
 ////////  GENERATING AN OTP
 function generateOTP() {
+  // let ran = [];
+  // let code;
+  // for (let i = 0; i < 6; i++) {
+  //   code = Math.floor(Math.random() * 10);
+  //   ran += code;
+  //   return;
+  // }
   return Math.floor(10000 + Math.random() * 900000);
 }
 
