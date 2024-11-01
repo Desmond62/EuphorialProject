@@ -402,9 +402,8 @@ body::-webkit-scrollbar {
   width: 1200px;
 } */
 
-.skeleton__image,
+..skeleton__image,
 .skeleton__text {
-  position: relative;
   background: linear-gradient(
     90deg,
     #e0e0e0,
@@ -439,7 +438,6 @@ body::-webkit-scrollbar {
     background-position: 0% 50%;
   }
 }
-
 /* @keyframes loading {
   0% {
     transform: translateX(0);
