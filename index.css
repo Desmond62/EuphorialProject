@@ -44,7 +44,8 @@ body::-webkit-scrollbar {
 .skeleton__text.skeleton-loading {
   height: 15px;
   margin-top: 10px;
-  border-radius: 0.9rem;
+  border-radius: 0.5rem;
+  padding: 0rem 0.4rem;
 }
 
 @keyframes waveAnimation {
