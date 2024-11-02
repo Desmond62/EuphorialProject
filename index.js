@@ -67,13 +67,47 @@ galleryWrapper.innerHTML = "";
 newArrival.forEach((item) => {
   const html = `
                <div class="gallery-slide">
-                  <img class="skeleton__image" src=${item.img} alt=${item.brand} />
-                  <p class="skeleton__text">${item.brand}</p>
+                  <img class="skeleton__image skeleton-loading" src=${item.img} alt=${item.brand} />
+                  <p class="skeleton__text skeleton-loading">${item.brand}</p>
                 </div>
     `;
   galleryWrapper.insertAdjacentHTML("beforeend", html);
 });
 
+// For Handling Skeleton
+function handleImageLoading() {
+  const gallerySlides = document.querySelectorAll(".gallery-slide");
+
+  gallerySlides.forEach((slide) => {
+    const img = slide.querySelector(".skeleton__image");
+    const text = slide.querySelector(".skeleton__text");
+
+    // Add loading state initially
+    if (!img.complete) {
+      img.classList.add("skeleton-loading");
+      text.classList.add("skeleton-loading");
+    }
+
+    img.onload = function () {
+      // Remove skeleton from both image and text when image loads
+      img.classList.remove("skeleton-loading");
+      text.classList.remove("skeleton-loading");
+      img.style.opacity = "1";
+      text.style.opacity = "1";
+    };
+
+    // Handle cached images
+    if (img.complete) {
+      img.classList.remove("skeleton-loading");
+      text.classList.remove("skeleton-loading");
+      img.style.opacity = "1";
+      text.style.opacity = "1";
+    }
+  });
+}
+
+// Call when DOM loads
+document.addEventListener("DOMContentLoaded", handleImageLoading);
 // Initialize Swiper FOR CAROUSEL
 const swiper = new Swiper(".swiper-container", {
   direction: "horizontal",

@@ -17,9 +17,18 @@ body {
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, and Edge */
 }
+
+/**** Skeleton Sliders ****/
+
 .skeleton__image,
 .skeleton__text {
-  position: relative;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skeleton__image.skeleton-loading,
+.skeleton__text.skeleton-loading {
+  opacity: 1;
   background: linear-gradient(
     90deg,
     #e0e0e0,
@@ -32,15 +41,10 @@ body::-webkit-scrollbar {
   animation: waveAnimation 2s ease-in-out infinite;
 }
 
-.skeleton__image {
-  width: 100%;
-  height: 200px; /* Adjust as needed */
-  object-fit: cover;
-}
-
-.skeleton__text {
-  height: 20px;
+.skeleton__text.skeleton-loading {
+  height: 15px;
   margin-top: 10px;
+  border-radius: 0.9rem;
 }
 
 @keyframes waveAnimation {
@@ -54,7 +58,6 @@ body::-webkit-scrollbar {
     background-position: 0% 50%;
   }
 }
-
 /*********  FOR NAVBAR   **********/
 
 .home__navbar {
@@ -429,32 +432,6 @@ body::-webkit-scrollbar {
 /* @media screen and (max-width: 400px) {
   .swiper__titles div > h1 {
     font-size: 1.8rem;
-  }
-} */
-
-/**** Skeleton Sliders ****/
-
-/* .gallery-slide {
-  position: relative;
-  overflow: hidden;
-  width: 1200px;
-} */
-
-/* @keyframes loading {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(200%);
-  }
-}
-
-@keyframes loading {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
   }
 } */
 
