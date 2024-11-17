@@ -9,12 +9,13 @@
 
 /* Skeleton block styles */
 .skeleton {
-  background-color: #cbd4e7;
+  /* background-color: #cbd4e7; */
+  background-color: red;
   border-radius: 0.25rem;
-  height: 12px;
-  width: fit-content;
-  display: flex;
-  align-items: center;
+  height: 30px;
+  /* width: fit-content; */
+  /* display: flex;
+  align-items: center; */
 }
 
 .icon-holder {
