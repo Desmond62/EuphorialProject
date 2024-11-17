@@ -27,13 +27,15 @@ body::-webkit-scrollbar {
 /**** Skeleton Sliders ****/
 
 .skeleton__image,
-.skeleton__text {
+.skeleton__text,
+.skeleton__btn {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .skeleton__image.skeleton-loading,
-.skeleton__text.skeleton-loading {
+.skeleton__text.skeleton-loading,
+.skeleton__btn {
   opacity: 1;
   background: linear-gradient(
     90deg,
@@ -387,6 +389,7 @@ body::-webkit-scrollbar {
   }
   .gallery-slide p {
     font-size: 10px;
+    width: fit-content;
   }
 
   /* Navigation buttons */
