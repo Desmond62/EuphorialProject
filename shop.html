@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <!-- For Likes -->
+    <link rel="stylesheet" href="uiverseIconCSS/like.css" />
+
+    <!-- For Buttons -->
+    <link rel="stylesheet" href="uiverseIconCSS/socialIcon.css" />
+    <!-- For Accordion Slides -->
+    <!--  prettier-ignore  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/accordion-js@3.3.4/dist/accordion.min.css"/>
+    <!--  prettier-ignore  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- =================================================== -->
+    <!-- ====================== For Feed Back Carousel = ============================ -->
+    <!--  prettier-ignore  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!--  prettier-ignore  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!--===================== Feed Back Carousel Ends ==========================  -->
+    <!--===============================================  -->
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <!-- =================================================================== -->
+    <!-- =================================================================== -->
+    <!--=========================== For Navbar ============================= -->
+    <!-- =================================================================== -->
+    <!-- =================================================================== -->
+    <header>
+      <!-- prettier-ignore -->
+      <div>
+         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"/></svg>
+       </div>
+      <nav class="home__navbar">
+        <div>
+          <a href="shop.html">
+            <h3>Euphorial</h3>
+            <p>Keep it classy</p>
+          </a>
+        </div>
+
+        <div>
+          <ul>
+            <li class="list__item"><a href="shop.html">Shop</a></li>
+            <li class="list__item"><a href="#">Men</a></li>
+            <li class="list__item">
+              <a href="/productPage/womenClothes.html">Women</a>
+            </li>
+            <li class="list__item"><a href="#">Combos</a></li>
+            <li class="list__item"><a href="#">Joggers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <!-- prettier-ignore -->
+          <form action="" method="post">
+          <label for="homeSearch" style="display: flex;align-items: center;">
+          <svg role="button" xmlns="http://www.w3.org/2000/svg"  width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none" stroke="black"><circle cx="11" cy="11" r="5.5"/><path stroke-linecap="round" stroke-linejoin="round" d="m15 15l4 4"/></g></svg>
+          </label>
+          <input type="search" placeholder="search" class="home__navBar" id="homeSearch" />
+        </form>
+        </div>
+
+        <!-- prettier-ignore -->
+        <div class="home__carts">
+          <button role="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="currentColor" d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3"/></svg>          
+          <span>0</span>
+          </button>
+          <button role="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></g></svg>
+            <span>0</span>
+          </button>
+          <button role="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="currentColor" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"/></svg>
+             <span>0</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!--------- For Main Section ---------->
+    <main>
+      <!-- FOR CAROUSEL SECTIOM  -->
+      <section>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper__titles">
+                <span>T-shirt / Tops</span>
+                <div>
+                  <h1>Summer</h1>
+                  <h1>Value Pack</h1>
+                </div>
+                <p>cool / colorful / comfy</p>
+
+                <div class="shop__btn">
+                  <button role="button">Shop Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper__titles">
+                <span>T-shirt / Tops</span>
+                <div>
+                  <h1>Summer</h1>
+                  <h1>Value Pack</h1>
+                </div>
+                <p>cool / colorful / comfy</p>
+
+                <div class="shop__btn">
+                  <button role="button">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Optional: Add navigation buttons -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+          <!-- Optional: Add pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- SECTION TWO -->
+      <section>
+        <div class="section__two">
+          <div class="low__price">
+            <div>
+              <span>Low Price</span>
+              <h2>High Coziness</h2>
+              <p>UPTO 50% OFF</p>
+              <h6>Explore Items</h6>
+            </div>
+          </div>
+
+          <div class="beyoung__present">
+            <div>
+              <span>Beyoung Presents</span>
+              <h2>Breeze Summer Style</h2>
+              <p>UPTO 50% OFF</p>
+              <h6>Explore Items</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  NEW ARRIVAL SECTION  -->
+      <section>
+        <div class="new__arrivalSection">
+          <div class="gallery-container">
+            <!-- prettier-ignore -->
+            <div style="display: flex;  align-items: center;margin-bottom: .5rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#8a33fd" d="M13 19h-2V5h2z"/></svg>
+              <h3 style="font-size: .9rem;">New Arrival</h3>
+            </div>
+            <div class="gallery-wrapper">
+              <!-- Gallery-Sliders -->
+            </div>
+
+            <button class="gallery-prev" role="button">&LeftArrow;</button>
+            <button class="gallery-next" role="button">&RightArrow;</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Big Saving Zone -->
+      <section style="padding-bottom: 1rem">
+        <div class="">
+          <!-- prettier-ignore -->
+          <div class="BigZone_mainContainer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#8a33fd" d="M13 19h-2V5h2z"/></svg>
+              <h3 style="font-size: .9rem;">Big Saving Zone</h3>
+            </div>
+          <div class="BigZone__subContainer">
+            <div class="hawaiian">
+              <div>
+                <h2>Hawaiian</h2>
+                <h3>Shirt</h3>
+                <p>Dress up in a summer vibe</p>
+                <span>UPTO 50% OFF</span>
+                <div>
+                  <!-- prettier-ignore -->
+                  <svg  class="hawaiian__svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="3em" viewBox="0 0 9 16"><path fill="currentColor" d="M4.5 13c-.28 0-.5-.22-.5-.5v-9c0-.28.22-.5.5-.5s.5.22.5.5v9c0 .28-.22.5-.5.5"/><path fill="currentColor" d="M4.5 14a.47.47 0 0 1-.35-.15l-3.5-3.5c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.15 3.15l3.15-3.15c.2-.2.51-.2.71 0s.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg>
+                </div>
+                <button role="button">SHOP NOW</button>
+              </div>
+            </div>
+
+            <div class="printed">
+              <div>
+                <h2>Printed</h2>
+                <h3>T-Shirt</h3>
+                <p>New Designs Every Week</p>
+                <span>UPTO 40% OFF</span>
+                <div>
+                  <!-- prettier-ignore -->
+                  <svg  class="hawaiian__svg"  xmlns="http://www.w3.org/2000/svg" width="1em" height="3em" viewBox="0 0 9 16"><path fill="currentColor" d="M4.5 13c-.28 0-.5-.22-.5-.5v-9c0-.28.22-.5.5-.5s.5.22.5.5v9c0 .28-.22.5-.5.5"/><path fill="currentColor" d="M4.5 14a.47.47 0 0 1-.35-.15l-3.5-3.5c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.15 3.15l3.15-3.15c.2-.2.51-.2.71 0s.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg>
+                </div>
+                <button role="button">SHOP NOW</button>
+              </div>
+            </div>
+
+            <div class="cargo">
+              <div>
+                <h2>Cargo</h2>
+                <h3>Joggers</h3>
+                <p>Move with styles & comfort</p>
+                <span>UPTO 50% OFF</span>
+                <div>
+                  <!-- prettier-ignore -->
+                  <svg  class="hawaiian__svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="3em" viewBox="0 0 9 16"><path fill="currentColor" d="M4.5 13c-.28 0-.5-.22-.5-.5v-9c0-.28.22-.5.5-.5s.5.22.5.5v9c0 .28-.22.5-.5.5"/><path fill="currentColor" d="M4.5 14a.47.47 0 0 1-.35-.15l-3.5-3.5c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.15 3.15l3.15-3.15c.2-.2.51-.2.71 0s.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg>
+                </div>
+                <button role="button">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="subBigZone" style="margin-top: 0.8rem">
+            <div class="urban">
+              <div>
+                <h2>Cargo</h2>
+                <h3>Joggers</h3>
+                <p>Move with styles & comfort</p>
+                <span>UPTO 50% OFF</span>
+                <div>
+                  <!-- prettier-ignore -->
+                  <svg  class="hawaiian__svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="3em" viewBox="0 0 9 16"><path fill="currentColor" d="M4.5 13c-.28 0-.5-.22-.5-.5v-9c0-.28.22-.5.5-.5s.5.22.5.5v9c0 .28-.22.5-.5.5"/><path fill="currentColor" d="M4.5 14a.47.47 0 0 1-.35-.15l-3.5-3.5c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.15 3.15l3.15-3.15c.2-.2.51-.2.71 0s.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg>
+                </div>
+                <button role="button">SHOP NOW</button>
+              </div>
+            </div>
+
+            <div class="overSized">
+              <div>
+                <h2>Cargo</h2>
+                <h3>Joggers</h3>
+                <p>Move with styles & comfort</p>
+                <span>UPTO 50% OFF</span>
+                <div>
+                  <!-- prettier-ignore -->
+                  <svg  class="hawaiian__svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="3em" viewBox="0 0 9 16"><path fill="currentColor" d="M4.5 13c-.28 0-.5-.22-.5-.5v-9c0-.28.22-.5.5-.5s.5.22.5.5v9c0 .28-.22.5-.5.5"/><path fill="currentColor" d="M4.5 14a.47.47 0 0 1-.35-.15l-3.5-3.5c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.15 3.15l3.15-3.15c.2-.2.51-.2.71 0s.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg>
+                </div>
+                <button role="button" title="Shop Now">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  We Made Your EveryDay Section -->
+      <section style="padding-bottom: 0.5rem">
+        <div class="everyDay__section">
+          <div style="margin-bottom: 1rem" class="everyDay__firstChild">
+            <div>
+              <h2>
+                WE MADE YOUR EVERYDAY <br />
+                FASHION BETTER!
+              </h2>
+              <p>
+                In our journey to improve everyday fashion, euphoria presents
+                EVERYDAY wear range - Comfortable & Affordable fashion 24/7
+              </p>
+
+              <button role="button">Shop Now</button>
+            </div>
+          </div>
+
+          <div class="everyDay__lastChild"></div>
+        </div>
+      </section>
+
+      <!--  Categories For Men -->
+      <section>
+        <!-- prettier-ignore -->
+        <div class="BigZone_mainContainer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#8a33fd" d="M13 19h-2V5h2z"/></svg>
+              <h3 style="font-size: .9rem; margin-top: 1rem;">Categories For Men</h3>
+            </div>
+
+        <div class="men__categories">
+          <div class="subMen__categories">
+            <img src="images/image27.jpeg" alt="fashionBoy" />
+            <div class="men__categoriesList">
+              <div>
+                <h4>Shirt</h4>
+                <p>Explore Now!</p>
+              </div>
+              <!-- prettier-ignore -->
+              <svg role="button" xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" d="M3 8h10m-3.25 3.5l3.5-3.5l-3.5-3.5"/></svg>
+            </div>
+          </div>
+
+          <div class="subMen__categories">
+            <img src="images/image15.jpeg" alt="fashionBoy" />
+            <div class="men__categoriesList">
+              <div>
+                <h4>Printed T-Shirts</h4>
+                <p>Explore Now!</p>
+              </div>
+              <!-- prettier-ignore -->
+              <svg role="button" xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" d="M3 8h10m-3.25 3.5l3.5-3.5l-3.5-3.5"/></svg>
+            </div>
+          </div>
+
+          <div class="subMen__categories">
+            <img src="images/image16.jpeg" alt="fashionBoy" />
+            <div class="men__categoriesList">
+              <div>
+                <h4>Plain T-Shirt</h4>
+                <p>Explore Now!</p>
+              </div>
+              <!-- prettier-ignore -->
+              <svg role="button" xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" d="M3 8h10m-3.25 3.5l3.5-3.5l-3.5-3.5"/></svg>
+            </div>
+          </div>
+
+          <div class="subMen__categories">
+            <img src="images/image17.jpeg" alt="fashionBoy" />
+            <div class="men__categoriesList">
+              <div>
+                <h4>Polo T-Shirt</h4>
+                <p>Explore Now!</p>
+              </div>
+              <!-- prettier-ignore -->
+              <svg role="button" xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" d="M3 8h10m-3.25 3.5l3.5-3.5l-3.5-3.5"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="men__categories">
+          <div class="subMen__categories">
+            <img src="images/image18.jpeg" alt="fashionBoy" />
+            <div class="men__categoriesList">
+              <div>
+                <h4>Hoodies & Sweetshirt</h4>
+                <p>Explore Now!</p>
+              </div>
+              <!-- prettier-ignore -->
+              <svg role="button" xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" d="M3 8h10m-3.25 3.5l3.5-3.5l-3.5-3.5"/></svg>
+            </div>
+          </div>
+
+          <div class="subMen__categories">
+            <img
+              src="images/image19.jpeg"
+              alt="fashionBoy"
+              style="object-position: center"
+            />
+            <div class="men__categoriesList">
+              <div>
+                <h4>Jeans</h4>
+                <p>Explore Now!</p>
+              </div>
+              <!-- prettier-ignore -->
+              <svg role="button" xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" d="M3 8h10m-3.25 3.5l3.5-3.5l-3.5-3.5"/></svg>
+            </div>
+          </div>
+
+          <div class="subMen__categories">
+            <img src="images/image20.jpeg" alt="fashionBoy" />
+            <div class="men__categoriesList">
+              <div>
+                <h4>Boxers</h4>
+                <p>Explore Now!</p>
+              </div>
+              <!-- prettier-ignore -->
+              <svg role="button" xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" d="M3 8h10m-3.25 3.5l3.5-3.5l-3.5-3.5"/></svg>
+            </div>
+          </div>
+
+          <div class="subMen__categories">
+            <img src="images/image21.jpeg" alt="fashionBoy" />
+            <div class="men__categoriesList">
+              <div>
+                <h4>Activewear</h4>
+                <p>Explore Now!</p>
+              </div>
+              <!-- prettier-ignore -->
+              <svg role="button" xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" d="M3 8h10m-3.25 3.5l3.5-3.5l-3.5-3.5"/></svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  Categories For Women-->
+      <section>
+        <!-- prettier-ignore -->
+        <div class="BigZone_mainContainer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#8a33fd" d="M13 19h-2V5h2z"/></svg>
+              <h3 style="font-size: .9rem;">Categories For Women</h3>
+            </div>
+
+        <div class="men__categories">
+          <div class="subMen__categories">
+            <img src="images/image22.png" alt="fashionBoy" />
+            <div class="men__categoriesList">
+              <div>
+                <h4>Shirt</h4>
+                <p>Explore Now!</p>
+              </div>
+              <!-- prettier-ignore -->
+              <svg role="button" xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" d="M3 8h10m-3.25 3.5l3.5-3.5l-3.5-3.5"/></svg>
+            </div>
+          </div>
+
+          <div class="subMen__categories">
+            <img src="images/image23.png" alt="fashionBoy" />
+            <div class="men__categoriesList">
+              <div>
+                <h4>Printed T-Shirts</h4>
+                <p>Explore Now!</p>
+              </div>
+              <!-- prettier-ignore -->
+              <svg role="button" xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" d="M3 8h10m-3.25 3.5l3.5-3.5l-3.5-3.5"/></svg>
+            </div>
+          </div>
+
+          <div class="subMen__categories">
+            <img src="images/image24.jpeg" alt="fashionBoy" />
+            <div class="men__categoriesList">
+              <div>
+                <h4>Plain T-Shirt</h4>
+                <p>Explore Now!</p>
+              </div>
+              <!-- prettier-ignore -->
+              <svg role="button" xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" d="M3 8h10m-3.25 3.5l3.5-3.5l-3.5-3.5"/></svg>
+            </div>
+          </div>
+
+          <div class="subMen__categories">
+            <img src="images/image25.png" alt="fashionBoy" />
+            <div class="men__categoriesList">
+              <div>
+                <h4>Polo T-Shirt</h4>
+                <p>Explore Now!</p>
+              </div>
+              <!-- prettier-ignore -->
+              <svg role="button" xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" d="M3 8h10m-3.25 3.5l3.5-3.5l-3.5-3.5"/></svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== Top Brands Deal  ========== -->
+      <section class="topBrand__section">
+        <h3>Top Brands Deal</h3>
+        <p>Up To <span>60% </span>off on brands</p>
+
+        <div class="topBrand__logos">
+          <div>
+            <img src="images/image26.png" alt="markLogo" />
+          </div>
+          <div>
+            <img src="images/image28.png" alt="markLogo" />
+          </div>
+          <div>
+            <img src="images/image29.png" alt="markLogo" />
+          </div>
+          <div>
+            <img src="images/image30.png" alt="markLogo" />
+          </div>
+          <div>
+            <img src="images/image31.png" alt="markLogo" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== LimeLight Section -->
+      <section class="limeLight__section">
+        <div class="limeLight__container">
+          <div>
+            <img src="images/image32.jpeg" alt="beautyGirl" />
+
+            <!-- prettier-ignore -->
+            <div class="con-like">
+          <input class="like" type="checkbox" title="like">
+        <div class="checkmark">
+         <svg xmlns="http://www.w3.org/2000/svg" class="outline" viewBox="0 0 24 24">
+          <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"></path>
+          </svg>
+         <svg xmlns="http://www.w3.org/2000/svg" class="filled" viewBox="0 0 24 24">
+         <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path>
+        </svg>
+         <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="celebrate">
+      <polygon class="poly" points="10,10 20,20"></polygon>
+      <polygon class="poly" points="10,50 20,50"></polygon>
+      <polygon class="poly" points="20,80 30,70"></polygon>
+      <polygon class="poly" points="90,10 80,20"></polygon>
+      <polygon class="poly" points="90,50 80,50"></polygon>
+      <polygon class="poly" points="80,80 70,70"></polygon>
+        </svg>
+       </div>
+      </div>
+
+            <div class="limeLight__items">
+              <div>
+                <h2>Black Sweatshirt with ....</h2>
+                <p>Jhanvi’s Brand</p>
+              </div>
+              <div>
+                <button role="button">$123.00</button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="images/image33.jpeg" alt="beautyGirl" />
+
+            <!-- prettier-ignore -->
+            <div class="con-like">
+          <input class="like" type="checkbox" title="like">
+        <div class="checkmark">
+         <svg xmlns="http://www.w3.org/2000/svg" class="outline" viewBox="0 0 24 24">
+          <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"></path>
+          </svg>
+         <svg xmlns="http://www.w3.org/2000/svg" class="filled" viewBox="0 0 24 24">
+         <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path>
+        </svg>
+         <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="celebrate">
+      <polygon class="poly" points="10,10 20,20"></polygon>
+      <polygon class="poly" points="10,50 20,50"></polygon>
+      <polygon class="poly" points="20,80 30,70"></polygon>
+      <polygon class="poly" points="90,10 80,20"></polygon>
+      <polygon class="poly" points="90,50 80,50"></polygon>
+      <polygon class="poly" points="80,80 70,70"></polygon>
+        </svg>
+       </div>
+      </div>
+
+            <div class="limeLight__items">
+              <div>
+                <h2>line Pattern Black H....</h2>
+                <p>AS’s Brand</p>
+              </div>
+              <div>
+                <button role="button">$37.00</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- prettier-ignore -->
+          <div>
+            <img src="images/image34.jpeg" alt="beautyGirl"  style="object-position: top;"/>
+            <div class="con-like">
+          <input class="like" type="checkbox" title="like">
+        <div class="checkmark">
+         <svg xmlns="http://www.w3.org/2000/svg" class="outline" viewBox="0 0 24 24">
+          <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"></path>
+          </svg>
+         <svg xmlns="http://www.w3.org/2000/svg" class="filled" viewBox="0 0 24 24">
+         <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path>
+        </svg>
+         <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="celebrate">
+      <polygon class="poly" points="10,10 20,20"></polygon>
+      <polygon class="poly" points="10,50 20,50"></polygon>
+      <polygon class="poly" points="20,80 30,70"></polygon>
+      <polygon class="poly" points="90,10 80,20"></polygon>
+      <polygon class="poly" points="90,50 80,50"></polygon>
+      <polygon class="poly" points="80,80 70,70"></polygon>
+        </svg>
+       </div>
+      </div>
+
+            <div class="limeLight__items">
+              <div>
+                <h2>Black Shorts</h2>
+                <p>MM’s  Brand</p>
+              </div>
+              <div>
+                <button role="button">$37.00</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="images/image35.jpeg" alt="beautyGirl" />
+
+            <!-- prettier-ignore -->
+            <div class="con-like">
+          <input class="like" type="checkbox" title="like">
+        <div class="checkmark">
+         <svg xmlns="http://www.w3.org/2000/svg" class="outline" viewBox="0 0 24 24">
+          <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"></path>
+          </svg>
+         <svg xmlns="http://www.w3.org/2000/svg" class="filled" viewBox="0 0 24 24">
+         <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path>
+        </svg>
+         <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="celebrate">
+      <polygon class="poly" points="10,10 20,20"></polygon>
+      <polygon class="poly" points="10,50 20,50"></polygon>
+      <polygon class="poly" points="20,80 30,70"></polygon>
+      <polygon class="poly" points="90,10 80,20"></polygon>
+      <polygon class="poly" points="90,50 80,50"></polygon>
+      <polygon class="poly" points="80,80 70,70"></polygon>
+        </svg>
+       </div>
+      </div>
+
+            <div class="limeLight__items">
+              <div>
+                <h2>Levender Hoodie with ....</h2>
+                <p>Nike’s Brand</p>
+              </div>
+              <div>
+                <button role="button">$119.00</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--============== For Feed Back Carousel  =================== -->
+      <section>
+        <!-- prettier-ignore -->
+        <div class="BigZone_mainContainer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#8a33fd" d="M13 19h-2V5h2z"/></svg>
+              <h3 style="font-size: .9rem;">Feedback</h3>
+            </div>
+
+        <div class="carousel">
+          <div class="feedback__container">
+            <div class="feedBack">
+              <div>
+                <img
+                  src="images/image24.jpeg"
+                  alt=""
+                  style="width: 100%; object-position: top"
+                />
+                <!-- prettier-ignore -->
+                <ul>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                  </li>
+                  <li>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146 " d="M12.86 10.44L11 6.06l-1.86 4.39l-4.75.41L8 14l-1.08 4.63L11 16.17l4.09 2.46L14 14l3.61-3.14zm3.73 10.26L11 17.34L5.42 20.7l1.46-6.35l-4.92-4.28l6.49-.57l2.55-6l2.55 6l6.49.57l-4.92 4.27z"/></svg>                  </li>
+                </ul>
+              </div>
+
+              <h3>Floyd Miles</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim
+                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation
+                veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+
+            <div class="feedBack">
+              <div>
+                <img src="images/image25.png" alt="" style="width: 100%" />
+                <!-- prettier-ignore -->
+                <ul>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146 " d="M12.86 10.44L11 6.06l-1.86 4.39l-4.75.41L8 14l-1.08 4.63L11 16.17l4.09 2.46L14 14l3.61-3.14zm3.73 10.26L11 17.34L5.42 20.7l1.46-6.35l-4.92-4.28l6.49-.57l2.55-6l2.55 6l6.49.57l-4.92 4.27z"/></svg>                  </li>
+                </ul>
+              </div>
+
+              <h3>Ronald Richards</h3>
+              <p>
+                ullamco est sit aliqua dolor do amet sint. Velit officia
+                consequat duis enim velit mollit. Exercitation veniam consequat
+                sunt nostrud amet.
+              </p>
+            </div>
+
+            <div class="feedBack">
+              <div>
+                <img
+                  src="images/image21.jpeg"
+                  alt=""
+                  style="width: 100%; object-position: top"
+                />
+                <!-- prettier-ignore -->
+                <ul>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146 " d="M12.86 10.44L11 6.06l-1.86 4.39l-4.75.41L8 14l-1.08 4.63L11 16.17l4.09 2.46L14 14l3.61-3.14zm3.73 10.26L11 17.34L5.42 20.7l1.46-6.35l-4.92-4.28l6.49-.57l2.55-6l2.55 6l6.49.57l-4.92 4.27z"/></svg>                </li>
+                </ul>
+              </div>
+
+              <h3>Savannah Nguyen</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim
+                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation
+                veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+
+          <div class="feedback__container">
+            <div class="feedBack">
+              <div>
+                <img src="images/image32.jpeg" alt="" style="width: 100%" />
+                <!-- prettier-ignore -->
+                <ul>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                  </li>
+                  <li>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146 " d="M12.86 10.44L11 6.06l-1.86 4.39l-4.75.41L8 14l-1.08 4.63L11 16.17l4.09 2.46L14 14l3.61-3.14zm3.73 10.26L11 17.34L5.42 20.7l1.46-6.35l-4.92-4.28l6.49-.57l2.55-6l2.55 6l6.49.57l-4.92 4.27z"/></svg>                  </li>
+                </ul>
+              </div>
+
+              <h3>Floyd Miles</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim
+                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation
+                veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+
+            <div class="feedBack">
+              <div>
+                <img src="images/image33.jpeg" alt="" style="width: 100%" />
+                <!-- prettier-ignore -->
+                <ul>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146 " d="M12.86 10.44L11 6.06l-1.86 4.39l-4.75.41L8 14l-1.08 4.63L11 16.17l4.09 2.46L14 14l3.61-3.14zm3.73 10.26L11 17.34L5.42 20.7l1.46-6.35l-4.92-4.28l6.49-.57l2.55-6l2.55 6l6.49.57l-4.92 4.27z"/></svg>                  </li>
+                </ul>
+              </div>
+
+              <h3>Ronald Richards</h3>
+              <p>
+                ullamco est sit aliqua dolor do amet sint. Velit officia
+                consequat duis enim velit mollit. Exercitation veniam consequat
+                sunt nostrud amet.
+              </p>
+            </div>
+
+            <div class="feedBack">
+              <div>
+                <img
+                  src="images/image34.jpeg"
+                  alt=""
+                  style="width: 100%; object-position: top"
+                />
+                <!-- prettier-ignore -->
+                <ul>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146 " d="M12.86 10.44L11 6.06l-1.86 4.39l-4.75.41L8 14l-1.08 4.63L11 16.17l4.09 2.46L14 14l3.61-3.14zm3.73 10.26L11 17.34L5.42 20.7l1.46-6.35l-4.92-4.28l6.49-.57l2.55-6l2.55 6l6.49.57l-4.92 4.27z"/></svg>                </li>
+                </ul>
+              </div>
+
+              <h3>Savannah Nguyen</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim
+                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation
+                veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+
+          <div class="feedback__container">
+            <div class="feedBack">
+              <div>
+                <img src="images/image35.jpeg" alt="" style="width: 100%" />
+                <!-- prettier-ignore -->
+                <ul>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                  </li>
+                  <li>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146 " d="M12.86 10.44L11 6.06l-1.86 4.39l-4.75.41L8 14l-1.08 4.63L11 16.17l4.09 2.46L14 14l3.61-3.14zm3.73 10.26L11 17.34L5.42 20.7l1.46-6.35l-4.92-4.28l6.49-.57l2.55-6l2.55 6l6.49.57l-4.92 4.27z"/></svg>                  </li>
+                </ul>
+              </div>
+
+              <h3>Floyd Miles</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim
+                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation
+                veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+
+            <div class="feedBack">
+              <div>
+                <img src="images/image22.png" alt="" style="width: 100%" />
+                <!-- prettier-ignore -->
+                <ul>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146 " d="M12.86 10.44L11 6.06l-1.86 4.39l-4.75.41L8 14l-1.08 4.63L11 16.17l4.09 2.46L14 14l3.61-3.14zm3.73 10.26L11 17.34L5.42 20.7l1.46-6.35l-4.92-4.28l6.49-.57l2.55-6l2.55 6l6.49.57l-4.92 4.27z"/></svg>                  </li>
+                </ul>
+              </div>
+
+              <h3>Ronald Richards</h3>
+              <p>
+                ullamco est sit aliqua dolor do amet sint. Velit officia
+                consequat duis enim velit mollit. Exercitation veniam consequat
+                sunt nostrud amet.
+              </p>
+            </div>
+
+            <div class="feedBack">
+              <div>
+                <img src="images/image23.png" alt="" style="width: 100%" />
+                <!-- prettier-ignore -->
+                <ul>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146  " d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill=" #EDD146 " d="M12.86 10.44L11 6.06l-1.86 4.39l-4.75.41L8 14l-1.08 4.63L11 16.17l4.09 2.46L14 14l3.61-3.14zm3.73 10.26L11 17.34L5.42 20.7l1.46-6.35l-4.92-4.28l6.49-.57l2.55-6l2.55 6l6.49.57l-4.92 4.27z"/></svg>                </li>
+                </ul>
+              </div>
+
+              <h3>Savannah Nguyen</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim
+                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation
+                veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================================================================== -->
+    <!-- ==================================================================== -->
+    <!-- ============================== Footer Section ====================== -->
+    <!-- ==================================================================== -->
+    <!-- ==================================================================== -->
+    <footer class="footer__section">
+      <div class="footer__container">
+        <div>
+          <h3>Need Help</h3>
+          <ul>
+            <li class="list__item"><a href="#"> Contact Us</a></li>
+            <li class="list__item"><a href="#"> Track Order</a></li>
+            <li class="list__item"><a href="#"> Returns & Refunds</a></li>
+            <li class="list__item"><a href="#"> FAQ's</a></li>
+            <li class="list__item"><a href="#"> Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li class="list__item"><a href="#"> About Us</a></li>
+            <li class="list__item"><a href="#"> Euphoria Blog</a></li>
+            <li class="list__item"><a href="#"> Euphoriastan</a></li>
+            <li class="list__item"><a href="#"> Collaboration</a></li>
+            <li class="list__item"><a href="#"> Media</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>More Info</h3>
+          <ul>
+            <li class="list__item"><a href="#"> Term and Conditions</a></li>
+            <li class="list__item"><a href="#"> Privacy Policy</a></li>
+            <li class="list__item"><a href="#"> Shipping Policy</a></li>
+            <li class="list__item"><a href="#"> Sitemap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Location</h3>
+          <ul>
+            <li class="list__item"><a href="#"> dezsol623@gmail.com</a></li>
+            <li class="list__item">
+              <a href="#"> Eklingpura Chouraha, Ahmedabad Main Road</a>
+            </li>
+            <li class="list__item">
+              <a href="#"> (NH 8- Near Mahadev Hotel) Udaipur, India- 313002</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__subContainer">
+        <div>
+          <ul class="socialContainer__icon">
+            <li>
+              <a href="#" class="socialContainer containerOne">
+                <!-- prettier-ignore -->
+                <svg class="socialSvg " xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="black" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socialContainer containerTwo">
+                <!-- prettier-ignore -->
+                <svg  class="socialSvg " xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 128 128"><path d="M75.916 54.2L122.542 0h-11.05L71.008 47.06L38.672 0H1.376l48.898 71.164L1.376 128h11.05L55.18 78.303L89.328 128h37.296L75.913 54.2ZM60.782 71.79l-4.955-7.086l-39.42-56.386h16.972L65.19 53.824l4.954 7.086l41.353 59.15h-16.97L60.782 71.793Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socialContainer containerThree">
+                <!-- prettier-ignore -->
+                <svg   class="socialSvg " xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><circle cx="4" cy="4" r="2" fill="black" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" dur="0.15s" values="0;1"/></circle><g fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path stroke-dasharray="12" stroke-dashoffset="12" d="M4 10v10"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.15s" dur="0.2s" values="12;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M10 10v10"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.45s" dur="0.2s" values="12;0"/></path><path stroke-dasharray="24" stroke-dashoffset="24" d="M10 15c0 -2.76 2.24 -5 5 -5c2.76 0 5 2.24 5 5v5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.65s" dur="0.2s" values="24;0"/></path></g></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socialContainer containerFour">
+                <!-- prettier-ignore -->
+                <svg   class="socialSvg "  xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="black" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Download The App</h2>
+
+          <div class="app__container">
+            <div>
+              <button class="app__btn" role="button">
+                <!-- prettier-ignore -->
+                <svg viewBox="30 336.7 120.9 129.2" width="1.5em" height="1.5em"><path d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7  c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z"fill="#FFD400"></path><path d="M99.1,401.1l-64.2,64.7c1.5,0.2,3.2-0.2,5.2-1.3  c4.2-2.3,48.8-26.7,79.1-43.3L99.1,401.1L99.1,401.1z"fill="#FF3333"></path><path d="M99.1,401.1l20.1-20.2c0,0-74.6-40.7-79.1-43.1  c-1.7-1-3.6-1.3-5.3-1L99.1,401.1z"fill="#48FF48"></path><path d="M99.1,401.1l-64.3-64.3c-2.6,0.6-4.8,2.9-4.8,7.6  c0,7.5,0,107.5,0,113.8c0,4.3,1.7,7.4,4.9,7.7L99.1,401.1z"fill="#3BCCFF"  ></path></svg>
+
+                <div>
+                  <p>andriod app on</p>
+                  <h4>Google Play</h4>
+                </div>
+              </button>
+            </div>
+
+            <div>
+              <button class="app__btn" role="button">
+                <!-- prettier-ignore -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="1.5em" viewBox="0 0 24 24"><path fill="#fff" d="M15.256 2.694h-1.25v.266a.275.275 0 0 1-.275.275h-3.268a.275.275 0 0 1-.275-.275v-.266H8.6a1.045 1.045 0 0 0-.979 1.1v16.347a1.045 1.045 0 0 0 .98 1.1h6.655a1.045 1.045 0 0 0 .98-1.1V3.795a1.045 1.045 0 0 0-.98-1.101m.705-.718H7.895a1.187 1.187 0 0 0-1.187 1.187v17.626a1.187 1.187 0 0 0 1.187 1.187h8.066a1.187 1.187 0 0 0 1.187-1.187V3.163a1.187 1.187 0 0 0-1.187-1.187m.646 18.463a1.105 1.105 0 0 1-1.068 1.14H8.283a1.105 1.105 0 0 1-1.068-1.14V3.497a1.106 1.106 0 0 1 1.068-1.141h7.256a1.106 1.106 0 0 1 1.068 1.141z" class="cls-1"/></svg>
+                <div>
+                  <p>avialable on</p>
+                  <h4>App store</h4>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- For Accordion Section -->
+      <div class="accordion-container">
+        <div class="ac">
+          <h2 class="ac-header">
+            <button class="ac-trigger">Popular Categories</button>
+          </h2>
+          <div class="ac-panel">
+            <p>
+              Some value 1... This is the content for the first accordion item.
+              You can put any HTML content here.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyRight">
+        <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- js for Home Page -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--  FOr Accordion Section -->
+    <script src="https://cdn.jsdelivr.net/npm/accordion-js@3.3.4/dist/accordion.min.js"></script>
+    <script src="libraryJs/accordion.js"></script>
+
+    <!-- ======= -->
+
+    <!-- ================================================================================ -->
+    <!-- ================= For Feed Back Carousel   STARTS=============================== -->
+    <!-- ================================================================================ -->
+    <!-- prettier-ignore -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"  ></script>
+    <!-- prettier-ignore -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" ></script>
+    <script src="libraryJs/feedback.js"></script>
+    <!-- =============================================================================== -->
+    <!-- ===============================  ENDS ========================================= -->
+    <!-- =============================================================================== -->
+
+    <script src="shop.js" type="module"></script>
+  </body>
+</html>

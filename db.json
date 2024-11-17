@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Floral Summer Dress",
+      "category": "Dresses",
+      "price": 59.99,
+      "description": "Light and breezy floral dress perfect for summer",
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "colors": ["Blue", "Pink", "White"],
+      "imageUrl": "/images/image22.png",
+      "inStock": true,
+      "reviews": 4.5
+    },
+    {
+      "id": 2,
+      "name": "High-Waist Skinny Jeans",
+      "category": "Pants",
+      "price": 49.99,
+      "description": "Classic high-waist skinny jeans with stretch comfort",
+      "sizes": ["2", "4", "6", "8", "10", "12"],
+      "colors": ["Dark Blue", "Black", "Light Blue"],
+      "imageUrl": "/images/image23.png",
+      "inStock": true,
+      "reviews": 4.8
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "Dresses" },
+    { "id": 2, "name": "Pants" },
+    { "id": 3, "name": "Tops" },
+    { "id": 4, "name": "Sweaters" },
+    { "id": 5, "name": "Skirts" },
+    { "id": 6, "name": "Accessories" }
+  ],
+  "featured": [
+    { "id": 1, "productId": 1 },
+    { "id": 2, "productId": 3 }
+  ],
+  "newArrivals": [
+    { "id": 1, "productId": 2 },
+    { "id": 2, "productId": 4 }
+  ]
+}

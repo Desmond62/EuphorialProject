@@ -1,0 +1,33 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  transition: all 0.3s ease-in;
+}
+
+.wemonsClothes__section {
+  padding: 1rem 1.5rem;
+  margin-right: 1rem;
+}
+
+.wemonsClothes__section > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wemonsClothes__section > div {
+  margin-bottom: 1rem;
+}
+
+.wemonsClothes__section > div:first-child h5 {
+  font-weight: 600;
+  color: #3f4646;
+}
+.wemonsClothes__section > div:first-child h5 span {
+  color: #8a33fd;
+  margin: 0rem 0.5rem;
+}
